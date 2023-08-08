@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-08T14:54:48.803Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="8pUTAhlqtOK-uMVjSe4M" version="21.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-08T16:32:08.795Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="88V9GPC9cM6cb7oBjaJy" version="21.6.6" type="github">
   <diagram name="Page-1" id="wQw_KMx7CQy3UjBhMsqz">
-    <mxGraphModel dx="5088" dy="2547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3990" dy="1967" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -142,16 +142,13 @@
           <mxGeometry y="110" width="290" height="8" as="geometry" />
         </mxCell>
         <mxCell id="HnynXK6BrLuGzu9qscMR-129" value="Cinema" style="html=1;overflow=block;blockSpacing=1;swimlane;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;fontStyle=0;marginBottom=0;swimlaneFillColor=#D9777F;startSize=25;whiteSpace=wrap;fontSize=16.7;fontColor=#ffffff;align=center;spacing=0;strokeColor=#ffffff;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#D9777F;strokeWidth=2.3;" parent="1" vertex="1">
-          <mxGeometry x="450" y="-760.5" width="280" height="183" as="geometry" />
+          <mxGeometry x="450" y="-760.5" width="280" height="108" as="geometry" />
         </mxCell>
         <mxCell id="HnynXK6BrLuGzu9qscMR-130" value="- id : INT AUTO INCREMENTE&lt;br&gt;- Nom : STRING&lt;br&gt;- Adresse : STRING" style="part=1;html=1;resizeHeight=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;swimlaneFillColor=#272733;strokeOpacity=100;fillOpacity=100;whiteSpace=wrap;fontSize=16.7;fontColor=#ffffff;" parent="HnynXK6BrLuGzu9qscMR-129" vertex="1">
           <mxGeometry y="25" width="280" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="MbIMBQDH0H3NFTRxCK3x-99" value="- id : INT AUTO INCREMENTE&lt;br&gt;- Nom : STRING&lt;br&gt;- Adresse : STRING" style="part=1;html=1;resizeHeight=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;swimlaneFillColor=#272733;strokeOpacity=100;fillOpacity=100;whiteSpace=wrap;fontSize=16.7;fontColor=#ffffff;" vertex="1" parent="HnynXK6BrLuGzu9qscMR-129">
-          <mxGeometry y="100" width="280" height="75" as="geometry" />
-        </mxCell>
         <mxCell id="HnynXK6BrLuGzu9qscMR-131" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#FFFFFF;" parent="HnynXK6BrLuGzu9qscMR-129" vertex="1">
-          <mxGeometry y="175" width="280" height="8" as="geometry" />
+          <mxGeometry y="100" width="280" height="8" as="geometry" />
         </mxCell>
         <mxCell id="HnynXK6BrLuGzu9qscMR-135" value="Film" style="html=1;overflow=block;blockSpacing=1;swimlane;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;fontStyle=0;marginBottom=0;swimlaneFillColor=#D9777F;startSize=25;whiteSpace=wrap;fontSize=16.7;fontColor=#ffffff;align=center;spacing=0;strokeColor=#ffffff;strokeOpacity=100;fillOpacity=100;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#D9777F;strokeWidth=2.3;" parent="1" vertex="1">
           <mxGeometry x="110" y="-690" width="280" height="108" as="geometry" />
