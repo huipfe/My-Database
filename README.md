@@ -1,5 +1,7 @@
 # My Database
 
+Trello du projet. : https://trello.com/invite/b/p5SeoRfI/ATTIc42bdb1a59a6fb13a4a34bfeb7201dca6B69A94F/evaluation-4-creer-et-administrer-une-base-de-donnees
+
 À partir d’une demande client, vous allez devoir modéliser une base de données.
 Les livrables attendus sont un diagramme de classes UML ou un Modèle Conceptuel de Données.
 Il vous sera aussi demandé de transmettre le fichier .sql avec les lignes de commande de la retranscription
@@ -71,4 +73,4 @@ salle!
 Sinon,nous nous contenterons pour l'instant d'un paiement sur place.
 
 #### D'un point de vue back office, qui pourra inscrire les séances?
-- Il nous faudrait un ou plusieurs administrateurs chez nous ayant une vue sur tout. Mais nous aimerionsqu'un utilisateur par complexe ait les droits d'ajouter les séances de son propre cinéma.
+- Il nous faudrait un ou plusieurs administrateurs chez nous ayant une vue sur tout. Mais nous aimerions qu'un utilisateur par complexe ait les droits d'ajouter les séances de son propre cinéma.
