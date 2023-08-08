@@ -3,25 +3,25 @@ USE CinemaReservation;
 
 -- Création des tables
 CREATE TABLE Client (
-    ID INT PRIMARY KEY,
+    ID INT AUTO_INCREMENT PRIMARY KEY,
     Nom VARCHAR(50),
     Prenom VARCHAR(50)
 );
 
 CREATE TABLE Film (
-    ID INT PRIMARY KEY,
+    ID INT AUTO_INCREMENT PRIMARY KEY,
     Titre VARCHAR(100),
     Duree INT
 );
 
 CREATE TABLE Cinema (
-    ID INT PRIMARY KEY,
+    ID INT AUTO_INCREMENT PRIMARY KEY,
     Nom VARCHAR(50),
     Adresse VARCHAR(100)
 );
 
 CREATE TABLE Salle (
-    ID INT PRIMARY KEY,
+    ID INT AUTO_INCREMENT PRIMARY KEY,
     CinemaID INT,
     Nom VARCHAR(50),
     Capacite INT,
@@ -29,7 +29,7 @@ CREATE TABLE Salle (
 );
 
 CREATE TABLE Seance (
-    ID INT PRIMARY KEY,
+    ID INT AUTO_INCREMENT PRIMARY KEY,
     FilmID INT,
     SalleID INT,
     DateHeure DATETIME,
@@ -38,13 +38,13 @@ CREATE TABLE Seance (
 );
 
 CREATE TABLE Tarif (
-    ID INT PRIMARY KEY,
+    ID INT AUTO_INCREMENT PRIMARY KEY,
     Type VARCHAR(20),
     Montant DECIMAL(5, 2)
 );
 
 CREATE TABLE Reservation (
-    ID INT PRIMARY KEY,
+    ID INT AUTO_INCREMENT PRIMARY KEY,
     ClientID INT,
     SeanceID INT,
     NombrePlaces INT,
@@ -55,7 +55,7 @@ CREATE TABLE Reservation (
 );
 
 CREATE TABLE Utilisateur (
-    ID INT PRIMARY KEY,
+    ID INT AUTO_INCREMENT PRIMARY KEY,
     NomUtilisateur VARCHAR(50),
     MotDePasse VARCHAR(50),
     Role VARCHAR(20),
