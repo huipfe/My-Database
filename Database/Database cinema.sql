@@ -68,6 +68,8 @@ CREATE TABLE Utilisateur (
 INSERT INTO Client (ID, Nom, Prenom)
 VALUES (1, 'Dupont', 'Jean'),
        (2, 'Martin', 'Sophie');
+       (3, 'Tervil', 'Ilan');
+       (4, 'Dubois', 'Jean');
 
 INSERT INTO Film (ID, Titre, Duree)
 VALUES (1, 'Avengers: Endgame', 180),
@@ -95,6 +97,8 @@ VALUES (1, 'Plein tarif', 9.20),
 INSERT INTO Utilisateur (ID, NomUtilisateur, MotDePasse, Role, CinemaID)
 VALUES (1, 'admin_central', 'motdepasse', 'Admin', 1),
        (2, 'admin_paradis', '123456', 'Admin', 2);
+       (3, 'user_paradis', 'azertyuiop', 'User', 2);
+       (4, 'user_central', 'azertyuiop', 'User', 1);
 
 INSERT INTO Reservation (ID, ClientID, SeanceID, NombrePlaces, TarifID)
 VALUES (1, 1, 1, 3, 1),
