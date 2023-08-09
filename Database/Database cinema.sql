@@ -103,3 +103,7 @@ VALUES (1, 'admin_central', 'motdepasse', 'Admin', 1),
 INSERT INTO Reservation (ID, ClientID, SeanceID, NombrePlaces, TarifID)
 VALUES (1, 1, 1, 3, 1),
        (2, 2, 2, 2, 2);
+
+
+-- Save Database
+mysqldump -u root cinemareservation > sauvegarde.sql
