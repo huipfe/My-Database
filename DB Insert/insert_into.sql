@@ -21,7 +21,9 @@
 
 LOCK TABLES `cinema` WRITE;
 /*!40000 ALTER TABLE `cinema` DISABLE KEYS */;
-INSERT INTO `cinema` VALUES (1,'Cinema Central','123 Rue du Cinéma'),(2,'Cinema Paradis','456 Avenue des Films');
+INSERT INTO `cinema` VALUES 
+(1,'Cinema Central','123 Rue du Cinéma'),
+(2,'Cinema Paradis','456 Avenue des Films');
 /*!40000 ALTER TABLE `cinema` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -31,7 +33,11 @@ UNLOCK TABLES;
 
 LOCK TABLES `client` WRITE;
 /*!40000 ALTER TABLE `client` DISABLE KEYS */;
-INSERT INTO `client` VALUES (1,'Dupont','Jean'),(2,'Martin','Sophie'),(3,'Tervil','Ilan'),(4,'Dubois','Jean');
+INSERT INTO `client` VALUES 
+(1,'Dupont','Jean'),
+(2,'Martin','Sophie'),
+(3,'Tervil','Ilan'),
+(4,'Dubois','Jean');
 /*!40000 ALTER TABLE `client` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -41,7 +47,9 @@ UNLOCK TABLES;
 
 LOCK TABLES `film` WRITE;
 /*!40000 ALTER TABLE `film` DISABLE KEYS */;
-INSERT INTO `film` VALUES (1,'Avengers: Endgame',180),(2,'Inception',148);
+INSERT INTO `film` VALUES 
+(1,'Avengers: Endgame',180),
+(2,'Inception',148);
 /*!40000 ALTER TABLE `film` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,7 +59,9 @@ UNLOCK TABLES;
 
 LOCK TABLES `reservation` WRITE;
 /*!40000 ALTER TABLE `reservation` DISABLE KEYS */;
-INSERT INTO `reservation` VALUES (1,1,1,3,1),(2,2,2,2,2);
+INSERT INTO `reservation` VALUES 
+(1,1,1,3,1),
+(2,2,2,2,2);
 /*!40000 ALTER TABLE `reservation` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -61,7 +71,11 @@ UNLOCK TABLES;
 
 LOCK TABLES `salle` WRITE;
 /*!40000 ALTER TABLE `salle` DISABLE KEYS */;
-INSERT INTO `salle` VALUES (1,1,'Salle A',100),(2,1,'Salle B',80),(3,2,'Salle 1',120),(4,2,'Salle 2',90);
+INSERT INTO `salle` VALUES 
+(1,1,'Salle A',100),
+(2,1,'Salle B',80),
+(3,2,'Salle 1',120),
+(4,2,'Salle 2',90);
 /*!40000 ALTER TABLE `salle` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -71,7 +85,9 @@ UNLOCK TABLES;
 
 LOCK TABLES `seance` WRITE;
 /*!40000 ALTER TABLE `seance` DISABLE KEYS */;
-INSERT INTO `seance` VALUES (1,1,1,'2023-08-10 18:00:00'),(2,2,2,'2023-08-11 15:30:00');
+INSERT INTO `seance` VALUES 
+(1,1,1,'2023-08-10 18:00:00'),
+(2,2,2,'2023-08-11 15:30:00');
 /*!40000 ALTER TABLE `seance` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -81,7 +97,10 @@ UNLOCK TABLES;
 
 LOCK TABLES `tarif` WRITE;
 /*!40000 ALTER TABLE `tarif` DISABLE KEYS */;
-INSERT INTO `tarif` VALUES (1,'Plein tarif',9.20),(2,'Étudiant',7.60),(3,'Moins de 14 ans',5.90);
+INSERT INTO `tarif` VALUES 
+(1,'Plein tarif',9.20),
+(2,'Étudiant',7.60),
+(3,'Moins de 14 ans',5.90);
 /*!40000 ALTER TABLE `tarif` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -91,7 +110,11 @@ UNLOCK TABLES;
 
 LOCK TABLES `utilisateur` WRITE;
 /*!40000 ALTER TABLE `utilisateur` DISABLE KEYS */;
-INSERT INTO `utilisateur` VALUES (1,'admin_central','motdepasse','Admin',1),(2,'admin_paradis','123456','Admin',2),(3,'user_paradis','azertyuiop','User',2),(4,'user_central','azertyuiop','User',1);
+INSERT INTO `utilisateur` VALUES 
+(1,'admin_central','Admin',1,'967520ae23e8ee14888bae72809031b98398ae4a636773e18fff917d77679334'),
+(2,'admin_paradis','Admin',2,'8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'),
+(3,'user_paradis','User',2,'aa3d2fe4f6d301dbd6b8fb2d2fddfb7aeebf3bec53ffff4b39a0967afa88c609'),
+(4,'user_central','User',1,'aa3d2fe4f6d301dbd6b8fb2d2fddfb7aeebf3bec53ffff4b39a0967afa88c609');
 /*!40000 ALTER TABLE `utilisateur` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

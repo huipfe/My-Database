@@ -63,6 +63,7 @@ CREATE TABLE Utilisateur (
     FOREIGN KEY (CinemaID) REFERENCES Cinema(ID)
 );
 
+----------------------------------------------------------------------------------------------------
 
 -- Insertion de données factices
 INSERT INTO Client (ID, Nom, Prenom)
@@ -104,14 +105,20 @@ INSERT INTO Reservation (ID, ClientID, SeanceID, NombrePlaces, TarifID)
 VALUES (1, 1, 1, 3, 1),
        (2, 2, 2, 2, 2);
 
+----------------------------------------------------------------------------------------------------
 
--- Se préparer à save la BDD
+-- Before save Database
 mysql> exit
 where mysqldump
 E:\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqldump.exe
 
 -- Save Database
 mysqldump -u root cinemareservation > sauvegarde.sql
+
+-- restore Database 
+-- (je restore à partir de la sauvegarde, fait au dessus, avec le fichier, 
+-- qui se doit d'être dans le meme répertoire, que ma cmd)
+mysql -u root -p cinemareservation < sauvegarde.sql
 
 -- Select each tables for divide in files into folder.
 mysqldump -u root cinemareservation > tables_cinema.sql cinema
@@ -130,4 +137,30 @@ mysqldump -u root cinemareservation --no-create-info --skip-triggers > insert_in
 
 -- Select each table of database
 mysqldump -u root cinemareservation --no-data --skip-triggers > alter_tables.sql
+
+
+----------------------------------------------------------------------------------------------------
+
+-- Implémentation de la sécurité de notre BDD (mettre à jour les mot de passe en hashé)
+
+--- On change la colonne dans notre table utilisateur, pour lui donner un mot de passe hashé, 
+--- on remplace MotdePasse, par MotDePasseHash.
+ALTER TABLE `utilisateur`
+ADD COLUMN `MotDePasseHash` varchar(128) DEFAULT NULL;
+
+--- On génère nos mot de passe hashé.
+UPDATE `utilisateur` SET `MotDePasseHash` = SHA2(`MotDePasse`, 256);
+
+--- Nous avons migré les mot de passe en clair de la colonne motdepasse, vers celle en hashé, nous pouvons donc
+--- la supprimer 
+ALTER TABLE `utilisateur`
+DROP COLUMN `MotDePasse`;
+
+--- Les anciens mot de passe, sont ici, si nous avons besoin de les connaitres, pour les mettre à jour. : 
+-- INSERT INTO `utilisateur` VALUES 
+-- (1,'admin_central','motdepasse','Admin',1),
+-- (2,'admin_paradis','123456','Admin',2),
+-- (3,'user_paradis','azertyuiop','User',2),
+-- (4,'user_central','azertyuiop','User',1);
+
 

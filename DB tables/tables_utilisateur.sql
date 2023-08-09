@@ -25,9 +25,9 @@ DROP TABLE IF EXISTS `utilisateur`;
 CREATE TABLE `utilisateur` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `NomUtilisateur` varchar(50) DEFAULT NULL,
-  `MotDePasse` varchar(50) DEFAULT NULL,
   `Role` varchar(20) DEFAULT NULL,
   `CinemaID` int DEFAULT NULL,
+  `MotDePasseHash` varchar(128) DEFAULT NULL,
   PRIMARY KEY (`ID`),
   KEY `CinemaID` (`CinemaID`),
   CONSTRAINT `utilisateur_ibfk_1` FOREIGN KEY (`CinemaID`) REFERENCES `cinema` (`ID`)
@@ -41,10 +41,10 @@ CREATE TABLE `utilisateur` (
 LOCK TABLES `utilisateur` WRITE;
 /*!40000 ALTER TABLE `utilisateur` DISABLE KEYS */;
 INSERT INTO `utilisateur` VALUES 
-(1,'admin_central','motdepasse','Admin',1),
-(2,'admin_paradis','123456','Admin',2),
-(3,'user_paradis','azertyuiop','User',2),
-(4,'user_central','azertyuiop','User',1);
+(1,'admin_central','Admin',1,'967520ae23e8ee14888bae72809031b98398ae4a636773e18fff917d77679334'),
+(2,'admin_paradis','Admin',2,'8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'),
+(3,'user_paradis','User',2,'aa3d2fe4f6d301dbd6b8fb2d2fddfb7aeebf3bec53ffff4b39a0967afa88c609'),
+(4,'user_central','User',1,'aa3d2fe4f6d301dbd6b8fb2d2fddfb7aeebf3bec53ffff4b39a0967afa88c609');
 /*!40000 ALTER TABLE `utilisateur` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-08-09 14:53:21
+-- Dump completed on 2023-08-09 18:32:22

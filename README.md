@@ -35,16 +35,40 @@ tables (4 points).
 5. Connaître les techniques de gestion de la sécurité d'une base de données (4 points).
 6. Savoir utiliser un utilitaire de sauvegarde et restauration (1 point).
 
-### Livrables - Diagramme de classe UML
+---------------------------------------------------------------------------------------------------
+### Livrables 
 - Diagramme de classe UML
 Voir DB par dbdiagram : https://dbdiagram.io/d/64d247f302bd1c4a5e6f8f16
 Voir DB par dbdocs : https://dbdocs.io/ilan.tervil/CinemaReservationIlanTervil?schema=public&view=relationships&table=Utilisateur
 
 - Diagramme: séquence, cas d'utilisation, et de classe dans le dossier du projet : DB Diagram
 Ou Liens drawio : https://app.diagrams.net/#Hhuipfe%2FMy-Database%2Fmain%2FDiagram%2FDiagramme%20Cinema.drawio
-### Livrables - Script SQL
-Voir les dossiers du projet : DB Delete, insert, select, User ect.
 
+- Script SQL
+Voir les dossiers, et fichiers, du projet.
+
+### Description des dossiers :
+- Diagram : 
+Diagramme - Cas d'utilisation : Contient le png, d'un cas d'utilisation de l'application
+Diagramme - Classe : Contient le png, d'un diagramme des classes de l'application
+Diagramme - Séquence : Contient le png, d'un diagramme de séquence de l'application
+
+Diagramme - Cinéma : Contient le png, d'un diagramme des trois en même temps.
+
+- Database : 
+sauvegarde.sql : Contient la sauvegarde la base de donée, qui a été modifier et construite par ligne de 
+commande et script SQL, au fur et à mesure.
+Database Cinema.sql : Contient l'historique de toute mes commandes, pour construire la base de donée.
+
+- DB Alter : Contient les contraintes, des clés primaire et étrangères de mes tables.
+
+- DB Insert : Contient toute les insertions d'information dont l'application à besoin.
+
+- DB Tables : Contiens les tables de la base de données, créer par ligne de commande et script SQL.
+Séparé en 8 fichiers, ou en un seul.
+
+
+---------------------------------------------------------------------------------------------------
 ## Annexes - FAQ commanditaire.
 
 #### Est-ce qu’il y aura uniquement les séances d'un seul cinéma?
