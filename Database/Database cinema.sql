@@ -105,5 +105,10 @@ VALUES (1, 1, 1, 3, 1),
        (2, 2, 2, 2, 2);
 
 
+-- Se préparer à save la BDD
+mysql> exit
+where mysqldump
+E:\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqldump.exe
+
 -- Save Database
 mysqldump -u root cinemareservation > sauvegarde.sql
