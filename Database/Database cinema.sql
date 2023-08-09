@@ -112,3 +112,22 @@ E:\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysqldump.exe
 
 -- Save Database
 mysqldump -u root cinemareservation > sauvegarde.sql
+
+-- Select each tables for divide in files into folder.
+mysqldump -u root cinemareservation > tables_cinema.sql cinema
+mysqldump -u root cinemareservation > tables_client.sql client
+mysqldump -u root cinemareservation > tables_film.sql film
+mysqldump -u root cinemareservation > tables_salle.sql salle
+mysqldump -u root cinemareservation > tables_seance.sql seance
+mysqldump -u root cinemareservation > tables_tarif.sql tarif
+mysqldump -u root cinemareservation > tables_reservation.sql reservation
+mysqldump -u root cinemareservation > tables_utilisateur.sql utilisateur
+
+-- Select each insert into of database
+-- utiliser l'option --no-create-info pour exclure les définitions de table, et 
+-- l'option --skip-triggers pour exclure les instructions relatives aux déclencheurs (triggers) :
+mysqldump -u root cinemareservation --no-create-info --skip-triggers > insert_into.sql
+
+-- Select each table of database
+mysqldump -u root cinemareservation --no-data --skip-triggers > alter_tables.sql
+
