@@ -36,7 +36,8 @@ tables (4 points).
 6. Savoir utiliser un utilitaire de sauvegarde et restauration (1 point).
 
 ---------------------------------------------------------------------------------------------------
-### Livrables 
+## Livrables 
+
 - Diagramme de classe UML
 Voir DB par dbdiagram : https://dbdiagram.io/d/64d247f302bd1c4a5e6f8f16
 Voir DB par dbdocs : https://dbdocs.io/ilan.tervil/CinemaReservationIlanTervil?schema=public&view=relationships&table=Utilisateur
